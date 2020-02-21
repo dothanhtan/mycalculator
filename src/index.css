@@ -17,6 +17,7 @@ code {
   border-radius: 0px;
   box-sizing: border-box;
   font-size: 110%;
+  background-color: yellow;
 }
 
 #root{
