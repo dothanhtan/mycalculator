@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,77 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}*/
+*{
+  margin:0px;
+  padding:0px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  font-size: 110%;
+}
+
+#root{
+  text-align:center;
+}
+.calculator-title{
+  font-size:30px;
+  /*background: radial-gradient(#5a68ff,#ff495a);*/
+  background-image: linear-gradient(rgb(17, 0, 255), rgb(0, 255, 13));
+  width: 360px;
+  height: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 2px;
+  border: 2px solid ;
+  color: #00ff1a;
+}
+.mainCalc{
+  margin:0px;
+  padding:0px;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+.screen-row input{
+  width: 360px;
+  height: 70px;
+  font-size: 30px;
+  background: #222222;
+  border: 0px;
+  color: #ffffff;
+  padding: 10px;
+  text-align: right;
+}
+input[type="button"]{
+  width: 90px;
+  height: 70px;
+  /*background: #ffffff;*/
+  background: rgb(7, 145, 238);
+  border: 1px solid #222;
+  padding: 10px 20px;
+  color: rgb(252, 250, 250);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+input[type="button"]:hover{
+  cursor: pointer;
+  
+}
+input[type="button"]:active{
+  background: rgb(10, 236, 236);
+  border: 1px solid #222;
+}
+
+.btnaction {
+  background: rgb(219, 12, 47) !important;
+  /*background-image: linear-gradient(rgb(17, 0, 255), rgb(0, 255, 13)) !important;*/
+}
+
+.button-row:last-child input:first-child {
+  width: 180px;
 }
