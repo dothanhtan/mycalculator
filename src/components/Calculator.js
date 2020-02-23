@@ -1,7 +1,7 @@
 import React from 'react';
-import CalculatorTitle from './CalculatorTitle.js';
-import OutputScreen from './outputScreen.js';
-import Button from './button.js';
+import CalculatorTitle from './CalculatorTitle';
+import OutputScreen from './outputScreen';
+import Button from './button';
 
 class Calculator extends React.Component {
     constructor(props) {
@@ -10,13 +10,11 @@ class Calculator extends React.Component {
             question: '',
             answer: ''
         }
-        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(event){
+    handleClick = (event) => {
         const value = event.target.value;
-        console.log(event.target)
-        console.log(value)
+        
         switch (value) {
             case '=': {
                 if (this.state.question!=='')
